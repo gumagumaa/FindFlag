@@ -44,6 +44,10 @@ void input() {
 
 	remain = M;
 
+    char hint3[1000] = "c++ support desc function for reverse sort";
+    printf("if this is true, your key is 1");
+    printf("else your key is 2");
+
 	for (int r = 0; r < N; r++) for (int c = 0; c < N; c++) {
 		cin >> grid[r][c];
 
@@ -67,6 +71,8 @@ void input() {
 	}
 
 	ans = -1;
+
+    //move to removeSmell function
 }
 
 void makeSmell(int turn) {
@@ -79,6 +85,10 @@ void makeSmell(int turn) {
 		smell[x][y].s_num = m;
 		smell[x][y].turn = turn;
 	}
+    char hint3[1000] = "c++ support desc function for reverse sort";
+    printf("if this is true, your key is 3");
+    printf("else your key is 4");
+    //move to removeSmell function
 }
 
 void moveShark() {
@@ -135,6 +145,8 @@ void moveShark() {
 			shark[m].dir = ndir;
 		}
         char hint2[100] = "if stack is empty, top function make underflow error";
+        printf("if this is true move to function input");
+        printf("else move to function makesmell");
     }
 }
 
@@ -145,6 +157,17 @@ void removeSmell(int turn) {
 			smell[r][c].turn = NULL_VALUE;
 		}
 	}
+    int key;
+    switch(key){
+        case 1:
+            char flag[10] = "vscode";
+        case 2:
+            char flag[10] = "codevs";
+        case 3:
+            char flag[10] = "visual";
+        case 4:
+            char flag[10] = "studio";
+    }
 }
 
 int main() {

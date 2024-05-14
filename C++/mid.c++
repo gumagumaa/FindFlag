@@ -2,9 +2,9 @@
 #include <string>
 #include <cstring>
 
-// 이 문제는 난이도 "고급"입니다.
+// 이 문제는 난이도 "중급"입니다.
 // 위 코드는 알고리즘 문제 풀이 사이트 "Baekjoon"의 "어른상어" 문제의 풀이를 변형한 코드입니다.
-// 이 문제는 Hint 1,2,3을 찾아 해당 Hint가 지시하는 곳으로 따라가서,
+// 이 문제는 Hint 1,2을 찾아 해당 Hint가 지시하는 곳으로 따라가서,
 // 영어, 숫자의 조합 혹은 단일로 구성된 6글자의 Flag를 찾으시면 됩니다.
 // 지시는 영어로 이루어져 있으며, 원본 "어른상어" 모범코드와 관련없습니다.
 // Main에서 시작하세요!
@@ -35,19 +35,11 @@ shark_t shark[MAX_M];
 smell_t smell[MAX_N][MAX_N];
 int remain, ans;
 
-inline bool checkBound(int x, int y) {
-	return 0 <= x && x < N && 0 <= y && y < N;
-}
+inline bool checkBound(int x, int y) {}
 
 void input() {
 	cin >> N >> M >> k;
-
 	remain = M;
-
-    char hint3[1000] = "c++ support desc function for reverse sort";
-    printf("if this is true, your key is 1");
-    printf("else your key is 2");
-
 	for (int r = 0; r < N; r++) for (int c = 0; c < N; c++) {
 		cin >> grid[r][c];
 
@@ -71,8 +63,6 @@ void input() {
 	}
 
 	ans = -1;
-
-    //move to removeSmell function
 }
 
 void makeSmell(int turn) {
@@ -85,10 +75,6 @@ void makeSmell(int turn) {
 		smell[x][y].s_num = m;
 		smell[x][y].turn = turn;
 	}
-    char hint3[1000] = "c++ support desc function for reverse sort";
-    printf("if this is true, your key is 3");
-    printf("else your key is 4");
-    //move to removeSmell function
 }
 
 void moveShark() {
@@ -145,8 +131,9 @@ void moveShark() {
 			shark[m].dir = ndir;
 		}
         char hint2[100] = "if stack is empty, top function make underflow error";
-        printf("if this is true move to function input");
-        printf("else move to function makesmell");
+        printf("is this is true, your key is 1");
+        printf("is this is false, your key is 2");
+        //move to removeSmell function
     }
 }
 
@@ -163,10 +150,6 @@ void removeSmell(int turn) {
             char flag[10] = "vscode";
         case 2:
             char flag[10] = "codevs";
-        case 3:
-            char flag[10] = "visual";
-        case 4:
-            char flag[10] = "studio";
     }
 }
 

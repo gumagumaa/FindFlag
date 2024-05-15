@@ -1,0 +1,1 @@
+print('Kim','Lee','Park','Choi', sep='/') #문제 1 출력 결과를 맞히세요
